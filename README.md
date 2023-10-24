@@ -1,6 +1,5 @@
 # The Wild Oasis
-
-Project that allow customers to book a cabin.
+Hotel management app
 
 ## Run Locally
 
