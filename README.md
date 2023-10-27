@@ -27,4 +27,6 @@ Start the server
   npm run dev
 ```
 
+![preview](./public/preview.png)
+
 Created by using React + Vite
