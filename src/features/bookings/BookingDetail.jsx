@@ -12,6 +12,7 @@ import { HiArrowUpOnSquare, HiTrash } from 'react-icons/hi2';
 import { useNavigate } from 'react-router-dom';
 import { useMoveBack } from '../../hooks/useMoveBack';
 import ConfirmDelete from '../../ui/ConfirmDelete.jsx';
+import Empty from '../../ui/Empty.jsx';
 import Modal from '../../ui/Modal.jsx';
 import Spinner from '../../ui/Spinner.jsx';
 import { useCheckout } from '../check-in-out/useCheckout.js';
@@ -32,6 +33,8 @@ function BookingDetail() {
   const navigate = useNavigate();
 
   if (isLoading) return <Spinner />;
+
+  if (!booking) return <Empty resourceName="booking" />;
 
   const { status, id: bookingId } = booking;
 
