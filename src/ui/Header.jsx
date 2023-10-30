@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Logout from '../features/authentication/Logout.jsx';
 import UserAvatar from '../features/authentication/UserAvatar.jsx';
 import HeaderMenu from './HeaderMenu.jsx';
 
